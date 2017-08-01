@@ -73,8 +73,8 @@ navigation">
   	let weather = new XMLHttpRequest();
   	weather.open("GET", "/weather.json");
   	weather.onload = function () {
-  		let myWeather - JSON.parse(weather.responseText);
-		let temp = myWeather.currentWeather.currentWeather;
+  		let myWeather = JSON.parse(weather.responseText);
+		let temp = myWeather.currentWeather.temperature;
 		let weatherSpot = document.querySelector("#weather");
 		weatherSpot.textContent = temp;
   	};
