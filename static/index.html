@@ -76,7 +76,7 @@ navigation">
   		let myWeather - JSON.parse(weather.responseText);
 		let temp = myWeather.currentLocation.currentWeather;
 		let weatherSpot = document.querySelector("#weather");
-		weatherSpot.textContent = temp
+		weatherSpot.textContent = temp;
   	};
   	weather.send();
   })();
